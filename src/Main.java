@@ -4,13 +4,12 @@ public class Main {
         ItalianPizzaService italianService = new ItalianPizzaService();
         PizzaMaker italianAdapter = new ItalianPizzaAdapter(italianService);
         PizzaShop italianShop = new PizzaShop(italianAdapter);
-        italianShop.placeOrder("Margherita");
-        italianShop.placeOrder(""); // Ошибка
+        italianShop.Margherita();
 
         // AmericanPizzaService
         AmericanPizzaService americanService = new AmericanPizzaService();
         PizzaMaker americanAdapter = new AmericanPizzaAdapter(americanService);
         PizzaShop americanShop = new PizzaShop(americanAdapter);
-        americanShop.placeOrder("Pepperoni");
+        americanShop.Pepperoni();
     }
 }
